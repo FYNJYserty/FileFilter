@@ -1,0 +1,9 @@
+-- Переход к jar файлу
+cd out/artifacts/FileFilter_jar
+-- Тесты
+java -jar FileFilter.jar in1.txt in2.txt
+java -jar FileFilter.jar -a in1.txt in2.txt
+java -jar FileFilter.jar -s -p sample- in1.txt in2.txt
+java -jar FileFilter.jar -f -p test- in1.txt in2.txt
+java -jar FileFilter.jar -o results/data -f -p test- in1.txt in2.txt
+java -jar FileFilter.jar -o results2 -f -s -p test- in1.txt in2.txt
